@@ -31,7 +31,8 @@
 		
 		if( tempData == nil )
 		{
-			@throw [NSException exceptionWithName:@"NSDataCrashed" reason:[NSString stringWithFormat:@"Error internally in Apple's NSData trying to read from URL '%@'. Error = %@", u, errorWithNSData] userInfo:@{NSLocalizedDescriptionKey:errorWithNSData}];
+            return nil;
+			//@throw [NSException exceptionWithName:@"NSDataCrashed" reason:[NSString stringWithFormat:@"Error internally in Apple's NSData trying to read from URL '%@'. Error = %@", u, errorWithNSData] userInfo:@{NSLocalizedDescriptionKey:errorWithNSData}];
 		}
 		else
 			stream = [[NSInputStream alloc] initWithData:tempData];

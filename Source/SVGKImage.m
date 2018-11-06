@@ -198,7 +198,7 @@ static NSMutableDictionary* globalSVGKImageCache;
     return parser;
 }
 
-+ (SVGKImage*) imageWithContentsOfURL:(NSURL *)url {
++ (nullable SVGKImage*) imageWithContentsOfURL:(NSURL *)url {
 	NSParameterAssert(url != nil);
 	@synchronized(self) {
 	return [[[self class] alloc] initWithContentsOfURL:url];

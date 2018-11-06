@@ -99,7 +99,7 @@ typedef void (^SVGKImageAsynchronousLoadingDelegate)(SVGKImage* loadedImage, SVG
  */
 +(SVGKParser *) imageAsynchronouslyNamed:(NSString *)name onCompletion:(SVGKImageAsynchronousLoadingDelegate) blockCompleted;
 + (SVGKImage *)imageWithContentsOfFile:(NSString *)path;
-+ (SVGKImage *)imageWithContentsOfURL:(NSURL *)url;
++ (nullable SVGKImage *)imageWithContentsOfURL:(NSURL *)url;
 + (SVGKParser*) imageParserWithContentsOfFileAsynchronously:(NSString *)aPath onCompletion:(SVGKImageAsynchronousLoadingDelegate)blockCompleted;
 + (SVGKImage*) imageWithContentsOfFileAsynchronously:(NSString *)aPath onCompletion:(SVGKImageAsynchronousLoadingDelegate)blockCompleted;
 
